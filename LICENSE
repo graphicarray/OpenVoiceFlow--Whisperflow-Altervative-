@@ -1,0 +1,187 @@
+# OpenWhispr — Open Source and Unrestricted Modification License
+
+
+## 1. Purpose
+
+OpenWhispr is an open-source desktop application intended to give everyone the freedom to use, modify, redesign, rebrand, redistribute, and commercialize the software.
+
+This license is designed to encourage unrestricted customization, independent development, commercial innovation, and the creation of derivative products.
+
+## 2. Permission to Use
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of the software and its associated source code, documentation, and other materials covered by this license (collectively, the "Software), to use the Software for any purpose, including personal, educational, research, professional, and commercial purposes, subject to the conditions of this license.
+
+## 3. Freedom to Modify and Redesign
+
+Anyone may freely:
+
+- Modify, edit, rewrite, or replace any part of the source code.
+- Completely redesign the user interface and user experience.
+- Change the application's layout, colors, typography, icons, animations, and visual appearance.
+- Add new features, remove existing features, or replace the application's functionality.
+- Change the software's architecture, implementation, and internal structure.
+- Adapt the software for different operating systems, workflows, and use cases.
+- Integrate the Software into other applications or projects.
+- Create entirely new products based on the Software.
+
+No permission from the original author is required to exercise these rights.
+
+## 4. Freedom to Rename and Rebrand
+
+Anyone may completely rebrand the Software without restriction.
+
+This includes the right to:
+
+- Change the name OpenWhispr to any other name.
+- Remove the OpenWhispr name from the application's interface.
+- Replace the original logo, icons, graphics, and visual identity.
+- Change the application name displayed in the operating system, installer, executable, window title, menus, and settings.
+- Replace the original website, links, documentation, and branding with their own.
+- Publish the modified Software under a new product identity.
+- Create a new commercial product based on the Software.
+- Remove references to the original project from the user interface of a modified version.
+
+Users are not required to retain the OpenWhispr name or maintain an affiliation with the original project.
+
+This permission does not automatically grant rights to trademarks or other assets owned by third parties.
+
+## 5. Freedom to Remove Original In-App Credits
+
+Anyone may remove the original author's name, acknowledgments, branding, and other author-identification elements displayed within the application's interface or other user-facing portions of a modified version.
+
+Users may replace those elements with their own branding or remove them entirely.
+
+No in-app attribution to the original author is required under this policy.
+
+However, this permission does not override the obligation to preserve applicable copyright and license notices in copies or substantial portions of the Software where this license requires them to be retained.
+
+Third-party components may have separate attribution requirements.
+
+## 6. Freedom to Redistribute
+
+Anyone may:
+
+- Copy and distribute the original Software.
+- Publish modified versions of the Software.
+- Distribute source code, compiled applications, installers, and executable files.
+- Share the Software through websites, repositories, marketplaces, and other distribution channels.
+- Create and distribute forks of the project.
+- Distribute modified versions under different product names and branding.
+- Include the Software in larger projects or commercial products.
+
+Redistribution may be free or paid.
+
+Anyone distributing the Software must comply with this license and any applicable licenses governing third-party components.
+
+## 7. Commercial Use and Resale
+
+Commercial use is explicitly permitted.
+
+Anyone may:
+
+- Sell the original Software.
+- Sell modified or redesigned versions.
+- Charge customers for downloads, installations, subscriptions, or services associated with their own version.
+- Incorporate the Software into a commercial product.
+- Use the Software as the foundation for a proprietary application.
+- Offer customized versions to clients.
+- Sell derivative products under their own business or brand.
+- Distribute the Software through commercial marketplaces.
+- Earn revenue from products and services developed using the Software.
+
+No royalties, revenue sharing, or additional payments are owed to the original author solely because someone exercises the rights granted by this license.
+
+## 8. Private Modifications and Proprietary Derivatives
+
+Anyone may modify the Software for private use without publishing their changes.
+
+Anyone may also distribute a modified version under proprietary terms, provided they comply with this license's requirements concerning the original Software and any applicable third-party licenses.
+
+There is no general obligation under this license to publish modifications or contribute changes back to the original project.
+
+## 9. Transfer of a Rebranded Project
+
+Anyone may transfer, sell, assign, or otherwise hand over their own rebranded or modified project to another individual, company, or organization.
+
+Such transfers may include, to the extent the transferor has the legal right to transfer them:
+
+- The new product name and branding.
+- Original modifications and independently created source code.
+- Project files and documentation.
+- Websites, domains, and associated business assets.
+- Copyrights in original contributions.
+- Other transferable intellectual property rights.
+
+The recipient may continue developing, modifying, distributing, and commercializing the transferred project.
+
+A transfer of a derivative project does not automatically transfer copyright ownership of the original contributions made by other authors or grant rights to third-party materials beyond their applicable licenses.
+
+## 10. Copyright and Ownership
+
+This license grants broad permissions to use and modify the Software. It does not, by itself, eliminate copyright in the original Software or automatically transfer ownership of the original source code.
+
+Each contributor retains the copyright they hold in their original contributions unless they expressly transfer or waive those rights through a legally effective instrument.
+
+Users may claim ownership of their own original modifications, designs, branding, and independently created materials.
+
+No user obtains exclusive ownership of the original Software merely by modifying, renaming, selling, or redistributing it.
+
+The original author does not claim ownership of independently created modifications merely because they are based on the Software.
+
+## 11. Copyright and License Notice
+
+Where this license requires the original copyright notice and permission notice to be preserved, they must accompany copies or substantial portions of the Software.
+
+The notices may be maintained in source files, license files, documentation, or another appropriate location.
+
+The requirement to preserve applicable legal notices does not require users to display the original author's name, logo, or branding in the user interface of their rebranded applications.
+
+Third-party components remain subject to their respective copyright notices and license conditions.
+
+## 12. Third-Party Components
+
+This license applies only to the Software and materials that the relevant copyright holders have the legal right to license under these terms.
+
+Third-party libraries, dependencies, fonts, icons, images, audio, models, and other included assets may be subject to separate licenses or restrictions.
+
+Nothing in this license grants rights that the original author does not possess.
+
+Anyone redistributing the Software is responsible for complying with the licenses applicable to the third-party materials they distribute.
+
+## 13. Trademarks and Product Names
+
+This license does not automatically grant ownership of or unrestricted rights to trademarks, registered marks, or other branding owned by the original author or third parties.
+
+Users may rename and rebrand their own versions of the Software, subject to applicable trademark laws and third-party rights.
+
+The OpenWhispr name and logo are not automatically transferred to users through this license.
+
+## 14. No Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE, EXCEPT TO THE EXTENT REQUIRED BY APPLICABLE LAW.
+
+## 15. No Obligation to Provide Support
+
+The original author and contributors are not obligated to provide technical support, maintenance, updates, bug fixes, hosting, or continued development.
+
+Anyone may independently maintain, fork, discontinue, or further develop their own version of the Software.
+
+## 16. Freedom of Independent Development
+
+Anyone may develop their version of the Software independently and may discontinue their association with the original project.
+
+Users are not required to seek approval from the original author before making changes, renaming their version, selling it, or transferring their own derivative project, provided they comply with this license and applicable law.
+
+## 17. Governing Legal Principles
+
+This license is intended to grant broad permissions while respecting applicable copyright, intellectual property, and other laws.
+
+If any provision is found unenforceable under applicable law, that provision shall be interpreted or limited to the minimum extent necessary, where legally permitted, without invalidating the remaining provisions.
+
+Nothing in this license excludes rights or obligations that cannot lawfully be excluded.
+
+---
+
+**End of License**
