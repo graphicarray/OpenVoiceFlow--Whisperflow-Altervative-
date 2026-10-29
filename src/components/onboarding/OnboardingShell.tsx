@@ -369,20 +369,6 @@ export function CompactOnboardingFrame({
       <div className="relative z-10 mx-auto flex w-full max-w-[30rem] flex-1 flex-col">
         {children}
       </div>
-
-          </a>{" "}
-          {t("auth.legal.and")}{" "}
-          <a
-            href="https://openwhispr.com/privacy"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[var(--onboarding-link)] transition-colors hover:opacity-80"
-          >
-            {t("auth.legal.privacy")}
-          </a>
-          {t("auth.legal.suffix")}
-        </p>
-      )}
     </section>
   );
 }
