@@ -2,9 +2,9 @@ const { execFileSync } = require("child_process");
 const debugLogger = require("./debugLogger");
 const GnomeGlobalShortcutsPortal = require("./gnomeGlobalShortcutsPortal");
 
-const DBUS_SERVICE_NAME = "com.openwhispr.App";
-const DBUS_OBJECT_PATH = "/com/openwhispr/App";
-const DBUS_INTERFACE = "com.openwhispr.App";
+const DBUS_SERVICE_NAME = "com.graphicarray.OpenVoiceFlow";
+const DBUS_OBJECT_PATH = "/com/graphicarray/OpenVoiceFlow";
+const DBUS_INTERFACE = "com.graphicarray.OpenVoiceFlow";
 
 // Per-slot gsettings paths and display names
 const SLOT_CONFIG = {

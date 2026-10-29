@@ -486,7 +486,7 @@
       "systemAudioDescription": "Permette al registratore delle riunioni di sentire l'altro lato delle tue chiamate — riunioni, lezioni, podcast. Puoi attivarlo più tardi nelle Impostazioni.",
       "optional": "Facoltativo",
       "recommended": "Consigliato",
-      "accessibilityTroubleshooting": "In Impostazioni di Sistema → Accessibilità, disattiva l'interruttore di Open Voice Flow e riattivalo. Se Open Voice Flow non compare nell'elenco, fai clic su + e aggiungilo dalla cartella Applicazioni. Ancora problemi? Scrivi a support@openwhispr.com."
+      "accessibilityTroubleshooting": "In Impostazioni di Sistema → Accessibilità, disattiva l'interruttore di Open Voice Flow e riattivalo. Se Open Voice Flow non compare nell'elenco, fai clic su + e aggiungilo dalla cartella Applicazioni. Ancora problemi? Scrivi a support@linkedin.com/in/graphicarray."
     },
     "transcription": {
       "title": "Configurazione trascrizione",
@@ -606,7 +606,7 @@
       "cloudUnreachable": {
         "title": "Impossibile raggiungere Open Voice Flow Cloud",
         "generic": "La richiesta di rete è fallita. Controlla la connessione.",
-        "dnsBlocked": "Il DNS non risolve openwhispr.com — potrebbe esserci un ad blocker o un filtro.",
+        "dnsBlocked": "Il DNS non risolve linkedin.com/in/graphicarray — potrebbe esserci un ad blocker o un filtro.",
         "refused": "Connessione rifiutata — probabilmente un firewall o una VPN.",
         "timeout": "Timeout di rete — VPN, captive portal o connessione instabile.",
         "tls": "Handshake TLS fallito — controlla l'orologio di sistema o un proxy aziendale.",
@@ -1226,7 +1226,7 @@
       "continueWithApple": "Continua con Apple",
       "continueWithGoogle": "Continua con Google",
       "continueWithMicrosoft": "Continua con Microsoft",
-      "protocolUnavailable": "Accesso dal browser non disponibile — registra di nuovo il protocollo openwhispr:// nelle impostazioni Applicazioni predefinite del sistema."
+      "protocolUnavailable": "Accesso dal browser non disponibile — registra di nuovo il protocollo openvoiceflow:// nelle impostazioni Applicazioni predefinite del sistema."
     },
     "welcomeSubtitle": "Il potere della tua voce. Alle tue condizioni.",
     "welcomeTitle": "Benvenuto in Open Voice Flow"
@@ -1469,7 +1469,7 @@
       "reset": "Reimposta",
       "save": "Salva"
     },
-    "defaultTestInput": "Ehi Whispr, che tempo fa oggi?",
+    "defaultTestInput": "Ehi Open Voice Flow, che tempo fa oggi?",
     "dialogs": {
       "reset": {
         "description": "Il prompt è stato reimpostato al valore predefinito.",
@@ -2123,7 +2123,7 @@
           "manualTitle": "Aggiungi questo alla tua configurazione",
           "manualDesc": "Configuralo tu stesso, poi ricostruisci.",
           "flakeTitle": "Stai installando tramite il nostro flake?",
-          "flakeDesc": "Se installi Open Voice Flow dal flake, programs.openwhispr.enable attiva ydotool, il modulo uinput e le appartenenze ai gruppi per te.",
+          "flakeDesc": "Se installi Open Voice Flow dal flake, programs.open-voice-flow.enable attiva ydotool, il modulo uinput e le appartenenze ai gruppi per te.",
           "rebuildNote": "Esegui sudo nixos-rebuild switch, poi disconnettiti e riconnettiti affinché la modifica al gruppo e la regola /dev/uinput abbiano effetto. Sostituisci <you> con il tuo nome utente."
         },
         "wlCopyDesc": "Strumento degli appunti da cui le app Wayland leggono il testo incollato su questo desktop"

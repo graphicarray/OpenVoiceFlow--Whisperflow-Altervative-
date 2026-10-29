@@ -1,10 +1,6 @@
-import { useEffect, useRef, type RefObject } from "react";
+import { useId } from "react";
 import { cn } from "../lib/utils";
-import {
-  AGENT_MODE_PATH,
-  resolveVoiceIdentityMorphPaths,
-  VOICE_IDENTITY_MORPH_DURATION_MS,
-} from "./voiceIdentityMorph";
+import { AGENT_MODE_PATH } from "./voiceIdentityMorph";
 
 interface VoiceIdentityIconProps {
   size?: number;
@@ -12,64 +8,19 @@ interface VoiceIdentityIconProps {
   className?: string;
 }
 
-const setPath = (ref: RefObject<SVGPathElement | null>, path: string, opacity: number) => {
-  ref.current?.setAttribute("d", path);
-  if (ref.current) ref.current.style.opacity = String(opacity);
-};
-
 /**
- * A real one-SVG morph: the listening ring becomes a leaf contour, its audio
- * bars bend into the leaf structure, and the left bar emits the Agent spark.
+ * Renders the Graphicarray logo mark in normal dictation mode and transitions
+ * smoothly to the Agent sparkle mark when agentMode is active.
  */
 export function VoiceIdentityIcon({
   size = 24,
   agentMode = false,
   className,
 }: VoiceIdentityIconProps) {
-  const progressRef = useRef(agentMode ? 1 : 0);
-  const shellRef = useRef<SVGPathElement>(null);
-  const leftBarRef = useRef<SVGPathElement>(null);
-  const centerBarRef = useRef<SVGPathElement>(null);
-  const rightBarRef = useRef<SVGPathElement>(null);
-  const sparkCrossRef = useRef<SVGPathElement>(null);
-  const agentRef = useRef<SVGPathElement>(null);
-  const renderedMorph = resolveVoiceIdentityMorphPaths(progressRef.current);
-
-  useEffect(() => {
-    const target = agentMode ? 1 : 0;
-    const start = progressRef.current;
-    const distance = Math.abs(target - start);
-
-    const applyProgress = (progress: number) => {
-      const morph = resolveVoiceIdentityMorphPaths(progress);
-      progressRef.current = progress;
-      setPath(shellRef, morph.shell, morph.constructionOpacity);
-      setPath(leftBarRef, morph.leftBar, morph.constructionOpacity);
-      setPath(centerBarRef, morph.centerBar, morph.constructionOpacity);
-      setPath(rightBarRef, morph.rightBar, morph.constructionOpacity);
-      setPath(sparkCrossRef, morph.sparkCross, morph.sparkOpacity);
-      if (agentRef.current) agentRef.current.style.opacity = String(morph.agentOpacity);
-    };
-
-    if (distance === 0 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      applyProgress(target);
-      return;
-    }
-
-    const startedAt = performance.now();
-    const duration = VOICE_IDENTITY_MORPH_DURATION_MS * distance;
-    let frame = 0;
-
-    const animate = (now: number) => {
-      const elapsed = Math.min(1, (now - startedAt) / duration);
-      const eased = elapsed < 0.5 ? 4 * elapsed ** 3 : 1 - (-2 * elapsed + 2) ** 3 / 2;
-      applyProgress(start + (target - start) * eased);
-      if (elapsed < 1) frame = requestAnimationFrame(animate);
-    };
-
-    frame = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(frame);
-  }, [agentMode]);
+  const uid = useId().replace(/:/g, "");
+  const g1 = `vi-g1-${uid}`;
+  const g2 = `vi-g2-${uid}`;
+  const g3 = `vi-g3-${uid}`;
 
   return (
     <span
@@ -86,61 +37,45 @@ export function VoiceIdentityIcon({
         className="voice-identity-svg absolute inset-0 overflow-visible"
         aria-hidden="true"
       >
-        <g className="voice-identity-construction">
-          <path
-            ref={shellRef}
-            className="voice-identity-morph-shell"
-            d={renderedMorph.shell}
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            style={{ opacity: renderedMorph.constructionOpacity }}
-          />
-          <path
-            ref={leftBarRef}
-            className="voice-identity-morph-bar voice-identity-morph-bar-left"
-            d={renderedMorph.leftBar}
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            style={{ opacity: renderedMorph.constructionOpacity }}
-          />
-          <path
-            ref={centerBarRef}
-            className="voice-identity-morph-bar voice-identity-morph-bar-center"
-            d={renderedMorph.centerBar}
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            style={{ opacity: renderedMorph.constructionOpacity }}
-          />
-          <path
-            ref={rightBarRef}
-            className="voice-identity-morph-bar voice-identity-morph-bar-right"
-            d={renderedMorph.rightBar}
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            style={{ opacity: renderedMorph.constructionOpacity }}
-          />
-          <path
-            ref={sparkCrossRef}
-            className="voice-identity-morph-spark"
-            d={renderedMorph.sparkCross}
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            style={{ opacity: renderedMorph.sparkOpacity }}
-          />
+        <defs>
+          <radialGradient id={g1} cx="49.12" cy="57.59" fx="49.12" fy="57.59" r="20.9" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stopColor="#00cdff" />
+            <stop offset=".2" stopColor="#00c6ff" />
+            <stop offset=".48" stopColor="#00b5ff" />
+            <stop offset=".79" stopColor="#0099ff" />
+            <stop offset="1" stopColor="#0083ff" />
+          </radialGradient>
+          <radialGradient id={g2} cx="28.88" cy="26.12" fx="28.88" fy="26.12" r="41.83" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stopColor="#00cdff" />
+            <stop offset=".23" stopColor="#00c9ff" />
+            <stop offset=".47" stopColor="#00bdff" />
+            <stop offset=".7" stopColor="#00a9ff" />
+            <stop offset=".93" stopColor="#008dff" />
+            <stop offset="1" stopColor="#0083ff" />
+          </radialGradient>
+          <radialGradient id={g3} cx="59" cy="46.76" fx="59" fy="46.76" r="33.78" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stopColor="#00cdff" />
+            <stop offset=".2" stopColor="#00c6ff" />
+            <stop offset=".48" stopColor="#00b5ff" />
+            <stop offset=".79" stopColor="#0099ff" />
+            <stop offset="1" stopColor="#0083ff" />
+          </radialGradient>
+        </defs>
+        <g
+          className="voice-identity-construction transition-opacity duration-300"
+          style={{ opacity: agentMode ? 0 : 1 }}
+          transform="translate(-3.6, -3.6) scale(0.312)"
+        >
+          <polygon fill={`url(#${g1})`} points="49.78 61.93 39.27 63.71 39.27 63.71 33.89 73.04 49.78 70.35 66.11 73.15 60.72 63.81 49.78 61.93" />
+          <path fill={`url(#${g2})`} d="M39.27,46.88l5.38-9.33.45-.79,2.54-4.4c1.03-1.78,3.6-1.78,4.63,0l2.54,4.4.5.87,10.78,1.85h0l-5.39-9.34-1.04-1.8-.11-.2c-4.27-7.39-14.94-7.39-19.2,0l-.11.2-.98,1.7-5.38,9.33-5.38,9.32-4.21,7.29c-2.78,4.82-1.54,10.27,1.85,13.63l2.36-4.09,5.38-9.32,5.38-9.33Z" />
+          <path fill={`url(#${g3})`} d="M75.7,56.1l-4.2-7.27-10.78-1.85-10.73-1.84-.02.04-5.31,9.2,5.13-.87,5.55.95,10.78,1.85h0s5.39,9.34,5.39,9.34l2.35,4.07c3.39-3.37,4.63-8.81,1.84-13.63Z" />
         </g>
         <path
-          ref={agentRef}
-          className="voice-identity-final-agent"
+          className="voice-identity-final-agent transition-opacity duration-300"
           d={AGENT_MODE_PATH}
           fill="currentColor"
           transform="scale(1.2)"
-          style={{ opacity: renderedMorph.agentOpacity }}
+          style={{ opacity: agentMode ? 1 : 0 }}
         />
       </svg>
     </span>

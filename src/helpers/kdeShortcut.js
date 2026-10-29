@@ -108,7 +108,7 @@ const QT_KEYS = {
   pause: 0x01000008,
 };
 
-const COMPONENT_NAME = "openwhispr";
+const COMPONENT_NAME = "open-voice-flow";
 
 class KDEShortcutManager {
   constructor() {

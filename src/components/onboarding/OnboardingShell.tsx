@@ -2,7 +2,7 @@ import type { CSSProperties, ReactNode } from "react";
 import type { OnboardingProgressState } from "./flow";
 import { ArrowLeft, Copy, Minus, Square, X } from "../icons";
 import { Button } from "../ui/button";
-import { BRAND_GLASS_SURFACE } from "../ui/gradientCircle";
+import { BrandMark as GraphicarrayBrandMark } from "../ui/BrandMark";
 import { cn } from "../lib/utils";
 import { useTranslation } from "react-i18next";
 import { getPlatform } from "../../utils/platform";
@@ -357,14 +357,8 @@ export function CompactOnboardingFrame({
     <section className="relative flex h-full min-h-screen w-full flex-col overflow-hidden bg-[var(--onboarding-surface)] text-[var(--onboarding-text-primary)]">
       <DitheredHero className="onboarding-compact-hero pointer-events-none absolute inset-x-0 top-0 h-33 w-full" />
       {showBrandMark && (
-        <div
-          className={cn(
-            "pointer-events-none absolute left-1/2 top-23 z-10 flex size-19 -translate-x-1/2 items-center justify-center rounded-[20px]",
-            BRAND_GLASS_SURFACE,
-            "shadow-(--shadow-brand-tile)"
-          )}
-        >
-          <BrandMark className="size-13" />
+        <div className="pointer-events-none absolute left-1/2 top-23 z-10 flex size-19 -translate-x-1/2 items-center justify-center rounded-[20px] shadow-(--shadow-brand-tile) overflow-hidden">
+          <GraphicarrayBrandMark size={76} className="size-19" />
         </div>
       )}
 
@@ -376,16 +370,6 @@ export function CompactOnboardingFrame({
         {children}
       </div>
 
-      {showLegalNotice && (
-        <p className="relative z-10 mx-auto mt-auto w-full max-w-sm shrink-0 px-2 pb-4 pt-5 text-center text-xs leading-[18px] text-[var(--onboarding-text-secondary)]">
-          {t("auth.legal.prefix")}{" "}
-          <a
-            href="https://openwhispr.com/terms"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[var(--onboarding-link)] transition-colors hover:opacity-80"
-          >
-            {t("auth.legal.terms")}
           </a>{" "}
           {t("auth.legal.and")}{" "}
           <a
@@ -404,18 +388,5 @@ export function CompactOnboardingFrame({
 }
 
 export function BrandMark({ className = "" }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 1024 1024"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-    >
-      <circle cx="512" cy="512" r="314" stroke="currentColor" strokeWidth="74" />
-      <path d="M512 383V641" stroke="currentColor" strokeWidth="74" strokeLinecap="round" />
-      <path d="M627 457V568" stroke="currentColor" strokeWidth="74" strokeLinecap="round" />
-      <path d="M397 457V568" stroke="currentColor" strokeWidth="74" strokeLinecap="round" />
-    </svg>
-  );
+  return <GraphicarrayBrandMark size={44} className={className} />;
 }

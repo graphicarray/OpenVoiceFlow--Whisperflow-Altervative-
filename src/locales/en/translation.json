@@ -486,7 +486,7 @@
       "systemAudioDescription": "Lets the meeting recorder hear the other side of your calls — meetings, lectures, podcasts. You can turn this on later in Settings.",
       "optional": "Optional",
       "recommended": "Recommended",
-      "accessibilityTroubleshooting": "In System Settings → Accessibility, switch Open Voice Flow's toggle off and back on. If Open Voice Flow isn't in the list at all, click + and add it from your Applications folder. Still stuck? Email support@openwhispr.com."
+      "accessibilityTroubleshooting": "In System Settings → Accessibility, switch Open Voice Flow's toggle off and back on. If Open Voice Flow isn't in the list at all, click + and add it from your Applications folder. Still stuck? Email support@linkedin.com/in/graphicarray."
     },
     "transcription": {
       "title": "Transcription Setup",
@@ -606,7 +606,7 @@
       "cloudUnreachable": {
         "title": "Can't reach Open Voice Flow Cloud",
         "generic": "Network request failed. Check your connection.",
-        "dnsBlocked": "DNS isn't resolving openwhispr.com — an ad blocker or filter may be blocking it.",
+        "dnsBlocked": "DNS isn't resolving linkedin.com/in/graphicarray — an ad blocker or filter may be blocking it.",
         "refused": "Connection was refused — likely a firewall or VPN.",
         "timeout": "Network timed out — VPN, captive portal, or unstable connection.",
         "tls": "TLS handshake failed — check your system clock or for a corporate proxy.",
@@ -1225,7 +1225,7 @@
       "continueWithApple": "Continue with Apple",
       "continueWithGoogle": "Continue with Google",
       "continueWithMicrosoft": "Continue with Microsoft",
-      "protocolUnavailable": "Browser sign-in unavailable — re-register the openwhispr:// protocol in your system's Default Apps settings."
+      "protocolUnavailable": "Browser sign-in unavailable — re-register the openvoiceflow:// protocol in your system's Default Apps settings."
     },
     "welcomeSubtitle": "The power of your voice. On your terms.",
     "welcomeTitle": "Welcome to Open Voice Flow",
@@ -1563,7 +1563,7 @@
       "reset": "Reset",
       "save": "Save"
     },
-    "defaultTestInput": "Hey Whispr, what's the weather like today?",
+    "defaultTestInput": "Hey Open Voice Flow, what's the weather like today?",
     "dialogs": {
       "reset": {
         "description": "Prompt has been reset to the default value.",
@@ -2417,7 +2417,7 @@
           "manualTitle": "Add this to your configuration",
           "manualDesc": "Configure it yourself, then rebuild.",
           "flakeTitle": "Installing via our flake?",
-          "flakeDesc": "If you install Open Voice Flow from the flake, programs.openwhispr.enable turns on ydotool, the uinput module and the group memberships for you.",
+          "flakeDesc": "If you install Open Voice Flow from the flake, programs.open-voice-flow.enable turns on ydotool, the uinput module and the group memberships for you.",
           "rebuildNote": "Run sudo nixos-rebuild switch, then log out and back in so the group change and the /dev/uinput rule take effect. Replace <you> with your username."
         },
         "wlCopyDesc": "Clipboard tool that Wayland apps read pasted text from on this desktop"

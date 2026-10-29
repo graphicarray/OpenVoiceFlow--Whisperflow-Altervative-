@@ -18,7 +18,7 @@ import { inheritsFallbackEndpoint } from "./reasoningRouting.js";
 // Callers must add `systemPrompt` to the config: ReasoningService treats a
 // missing one as its cleanup path, which echoes the input back instead of
 // running the instruction.
-export function resolveDictationAgentInference(settings, { _isCloudAgent = false } = {}) {
+export function resolveDictationAgentInference(settings, { isCloudAgent = false } = {}) {
   const managed = getManagedScopeResolution("dictationAgent", settings.enterpriseSetupMode);
   if (managed.kind === "managed") {
     return {

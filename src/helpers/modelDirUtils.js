@@ -38,14 +38,14 @@ function getPreferredCacheRoot(homeCache) {
   if (process.platform === "win32") {
     const redirectedProfile = process.env.USERPROFILE;
     if (redirectedProfile && path.isAbsolute(redirectedProfile)) {
-      return path.join(redirectedProfile, ".cache", "openwhispr");
+      return path.join(redirectedProfile, ".cache", "open-voice-flow");
     }
   }
 
   if (process.platform === "linux") {
     const xdgCacheHome = process.env.XDG_CACHE_HOME;
     if (xdgCacheHome && path.isAbsolute(xdgCacheHome)) {
-      return path.join(xdgCacheHome, "openwhispr");
+      return path.join(xdgCacheHome, "open-voice-flow");
     }
   }
 
@@ -122,7 +122,7 @@ function migrateLegacyModelDirs(legacyRoot, targetRoot) {
 
 function getCacheRoot() {
   const homeDir = app?.getPath?.("home") || os.homedir();
-  const homeCache = path.join(homeDir, ".cache", "openwhispr");
+  const homeCache = path.join(homeDir, ".cache", "open-voice-flow");
   let targetRoot = getPreferredCacheRoot(homeCache);
 
   if (process.platform === "win32" && pathHasProblematicChars(targetRoot)) {

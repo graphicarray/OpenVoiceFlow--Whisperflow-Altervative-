@@ -1289,7 +1289,7 @@
       "continueWithApple": "المتابعة باستخدام Apple",
       "continueWithGoogle": "المتابعة باستخدام Google",
       "continueWithMicrosoft": "المتابعة باستخدام Microsoft",
-      "protocolUnavailable": "تسجيل الدخول عبر المتصفح غير متوفر — أعد تسجيل بروتوكول openwhispr:// في إعدادات التطبيقات الافتراضية بنظامك."
+      "protocolUnavailable": "تسجيل الدخول عبر المتصفح غير متوفر — أعد تسجيل بروتوكول openvoiceflow:// في إعدادات التطبيقات الافتراضية بنظامك."
     },
     "welcomeSubtitle": "قوة صوتك. بشروطك.",
     "welcomeTitle": "مرحبًا بك في Open Voice Flow",
@@ -1439,7 +1439,7 @@
       "reset": "إعادة تعيين",
       "save": "حفظ"
     },
-    "defaultTestInput": "مرحبًا Whispr، كيف حال الطقس اليوم؟",
+    "defaultTestInput": "مرحبًا Open Voice Flow، كيف حال الطقس اليوم؟",
     "dialogs": {
       "reset": {
         "description": "تمت إعادة تعيين المطالبة إلى القيمة الافتراضية.",
@@ -2888,7 +2888,7 @@
       "systemAudioDescription": "يتيح لمسجل الاجتماع سماع الجانب الآخر من مكالماتك — الاجتماعات، المحاضرات، البودكاست. يمكنك تشغيل هذا لاحقًا في الإعدادات.",
       "optional": "اختياري",
       "recommended": "موصى به",
-      "accessibilityTroubleshooting": "في إعدادات النظام ← تسهيلات الاستخدام، أوقف مفتاح تبديل Open Voice Flow ثم أعد تشغيله. إذا لم يكن Open Voice Flow موجودًا في القائمة أصلًا، فانقر على + وأضفه من مجلد التطبيقات. هل ما زلت تواجه مشكلة؟ راسلنا على support@openwhispr.com."
+      "accessibilityTroubleshooting": "في إعدادات النظام ← تسهيلات الاستخدام، أوقف مفتاح تبديل Open Voice Flow ثم أعد تشغيله. إذا لم يكن Open Voice Flow موجودًا في القائمة أصلًا، فانقر على + وأضفه من مجلد التطبيقات. هل ما زلت تواجه مشكلة؟ راسلنا على support@linkedin.com/in/graphicarray."
     },
     "transcription": {
       "title": "إعداد التفريغ",
@@ -3776,7 +3776,7 @@
           "manualTitle": "أضف هذا إلى التكوين الخاص بك",
           "manualDesc": "قم بتكوينه بنفسك، ثم أعد البناء.",
           "flakeTitle": "التثبيت عبر flake الخاص بنا؟",
-          "flakeDesc": "إذا قمت بتثبيت Open Voice Flow من flake، فسيقوم programs.openwhispr.enable بتفعيل ydotool ووحدة uinput وعضويات المجموعة نيابة عنك.",
+          "flakeDesc": "إذا قمت بتثبيت Open Voice Flow من flake، فسيقوم programs.open-voice-flow.enable بتفعيل ydotool ووحدة uinput وعضويات المجموعة نيابة عنك.",
           "rebuildNote": "قم بتشغيل sudo nixos-rebuild switch، ثم قم بتسجيل الخروج وتسجيل الدخول مرة أخرى حتى يسري تغيير المجموعة وقاعدة /dev/uinput. استبدل <you> باسم المستخدم الخاص بك."
         },
         "wlCopyDesc": "أداة الحافظة التي تقرأ منها تطبيقات Wayland النص الملصوق على سطح المكتب هذا"
@@ -4331,7 +4331,7 @@
       "cloudUnreachable": {
         "title": "لا يمكن الوصول إلى Open Voice Flow Cloud",
         "generic": "فشل طلب الشبكة. تحقق من اتصالك.",
-        "dnsBlocked": "لا يستطيع DNS تحليل openwhispr.com — قد يقوم مانع الإعلانات أو مرشح بحظره.",
+        "dnsBlocked": "لا يستطيع DNS تحليل linkedin.com/in/graphicarray — قد يقوم مانع الإعلانات أو مرشح بحظره.",
         "refused": "تم رفض الاتصال — على الأرجح بسبب جدار حماية أو VPN.",
         "timeout": "انتهت مهلة الشبكة — بسبب VPN أو صفحة تسجيل دخول للشبكة (captive portal) أو اتصال غير مستقر.",
         "tls": "فشلت مصافحة TLS — تحقق من ساعة نظامك أو وجود وكيل شبكة خاص بالشركة.",

@@ -986,8 +986,8 @@ export default function SettingsPage({
   const [isRemovingModels, setIsRemovingModels] = useState(false);
   const [cachePathHint, setCachePathHint] = useState(
     typeof navigator !== "undefined" && /Windows/i.test(navigator.userAgent)
-      ? "%USERPROFILE%\\.cache\\openwhispr"
-      : "~/.cache/openwhispr"
+      ? "%USERPROFILE%\\.cache\\open-voice-flow"
+      : "~/.cache/open-voice-flow"
   );
   useEffect(() => {
     window.electronAPI

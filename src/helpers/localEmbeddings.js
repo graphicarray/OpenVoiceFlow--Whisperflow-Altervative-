@@ -18,7 +18,7 @@ class LocalEmbeddings {
     const cacheDir = path.join(
       os.homedir(),
       ".cache",
-      "openwhispr",
+      "open-voice-flow",
       "embedding-models",
       MODEL_SUBDIR
     );

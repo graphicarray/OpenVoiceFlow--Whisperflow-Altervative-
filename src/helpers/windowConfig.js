@@ -180,7 +180,8 @@ function resolveHorizontalWindowDirection(bounds, display, preferredPosition = "
 const MAIN_WINDOW_CONFIG = {
   width: WINDOW_SIZES.BASE.width,
   height: WINDOW_SIZES.BASE.height,
-  title: "Voice Recorder",
+  title: "Open Voice Flow",
+  icon: path.join(__dirname, "..", "assets", process.platform === "win32" ? "icon.ico" : "icon.png"),
   webPreferences: {
     preload: path.join(__dirname, "..", "..", "preload.js"),
     nodeIntegration: false,
@@ -235,7 +236,8 @@ const CONTROL_PANEL_CONFIG = {
     spellcheck: false,
     backgroundThrottling: false,
   },
-  title: "Control Panel",
+  title: "Open Voice Flow",
+  icon: path.join(__dirname, "..", "assets", process.platform === "win32" ? "icon.ico" : "icon.png"),
   resizable: true,
   show: false,
   frame: false,

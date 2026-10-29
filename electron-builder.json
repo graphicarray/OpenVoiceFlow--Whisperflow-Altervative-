@@ -7,7 +7,7 @@
   "productName": "Open Voice Flow",
   "protocols": {
     "name": "Open Voice Flow Protocol",
-    "schemes": ["openwhispr"]
+    "schemes": ["openvoiceflow"]
   },
   "directories": {
     "output": "dist"

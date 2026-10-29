@@ -486,7 +486,7 @@
       "systemAudioDescription": "让会议录音机听到通话另一方的声音 — 会议、讲座、播客。你可以稍后在“设置”中开启。",
       "optional": "可选",
       "recommended": "推荐",
-      "accessibilityTroubleshooting": "在系统设置 → 辅助功能中，将 Open Voice Flow 的开关关闭再重新打开。如果列表中根本没有 Open Voice Flow，请点按 + 并从“应用程序”文件夹中添加。还是不行？请发邮件至 support@openwhispr.com。"
+      "accessibilityTroubleshooting": "在系统设置 → 辅助功能中，将 Open Voice Flow 的开关关闭再重新打开。如果列表中根本没有 Open Voice Flow，请点按 + 并从“应用程序”文件夹中添加。还是不行？请发邮件至 support@linkedin.com/in/graphicarray。"
     },
     "transcription": {
       "title": "转录设置",
@@ -606,7 +606,7 @@
       "cloudUnreachable": {
         "title": "无法连接到 Open Voice Flow Cloud",
         "generic": "网络请求失败，请检查你的连接。",
-        "dnsBlocked": "DNS 无法解析 openwhispr.com — 广告拦截器或过滤器可能阻止了它。",
+        "dnsBlocked": "DNS 无法解析 linkedin.com/in/graphicarray — 广告拦截器或过滤器可能阻止了它。",
         "refused": "连接被拒绝 — 可能是防火墙或 VPN。",
         "timeout": "网络超时 — VPN、强制门户或网络不稳定。",
         "tls": "TLS 握手失败 — 请检查系统时钟或企业代理。",
@@ -1225,7 +1225,7 @@
       "continueWithApple": "使用 Apple 继续",
       "continueWithGoogle": "使用 Google 继续",
       "continueWithMicrosoft": "使用 Microsoft 继续",
-      "protocolUnavailable": "无法通过浏览器登录 — 请在系统的“默认应用”设置中重新注册 openwhispr:// 协议。"
+      "protocolUnavailable": "无法通过浏览器登录 — 请在系统的“默认应用”设置中重新注册 openvoiceflow:// 协议。"
     },
     "welcomeSubtitle": "你的声音，由你掌控。",
     "welcomeTitle": "欢迎使用 Open Voice Flow",
@@ -1469,7 +1469,7 @@
       "reset": "重置",
       "save": "保存"
     },
-    "defaultTestInput": "你好 Whispr，今天天气怎么样？",
+    "defaultTestInput": "你好 Open Voice Flow，今天天气怎么样？",
     "dialogs": {
       "reset": {
         "description": "提示词已重置为默认值。",
@@ -2123,7 +2123,7 @@
           "manualTitle": "将以下内容添加到您的配置中",
           "manualDesc": "自行配置后重新构建。",
           "flakeTitle": "通过我们的 flake 安装？",
-          "flakeDesc": "如果您通过 flake 安装 Open Voice Flow，programs.openwhispr.enable 会自动为您启用 ydotool、uinput 模块以及相应的用户组权限。",
+          "flakeDesc": "如果您通过 flake 安装 Open Voice Flow，programs.open-voice-flow.enable 会自动为您启用 ydotool、uinput 模块以及相应的用户组权限。",
           "rebuildNote": "运行 sudo nixos-rebuild switch，然后注销并重新登录，使组变更和 /dev/uinput 规则生效。将 <you> 替换为您的用户名。"
         },
         "wlCopyDesc": "此桌面上 Wayland 应用读取粘贴文本所用的剪贴板工具"

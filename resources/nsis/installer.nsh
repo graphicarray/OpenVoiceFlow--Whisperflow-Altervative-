@@ -34,15 +34,15 @@
   ; Guarded by isUpdated so an in-place update does not silently turn launch at
   ; login off for a user who had enabled it.
   ${ifNot} ${isUpdated}
-    !insertmacro DeleteAutoStartEntry "com.gizmolabs.openwhispr"
-    !insertmacro DeleteAutoStartEntry "com.gizmolabs.openwhispr.staging"
-    !insertmacro DeleteAutoStartEntry "com.gizmolabs.openwhispr.development"
+    !insertmacro DeleteAutoStartEntry "com.graphicarray.openvoiceflow"
+    !insertmacro DeleteAutoStartEntry "com.graphicarray.openvoiceflow.staging"
+    !insertmacro DeleteAutoStartEntry "com.graphicarray.openvoiceflow.development"
     nsExec::ExecToLog 'netsh advfirewall firewall delete rule name="${SHERPA_FIREWALL_RULE}"'
-    StrCpy $0 "$PROFILE\.cache\openwhispr\models"
+    StrCpy $0 "$PROFILE\.cache\open-voice-flow\models"
     IfFileExists "$0\*.*" 0 +3
       RMDir /r "$0"
       DetailPrint "Removed Open Voice Flow cached models"
-    StrCpy $1 "$PROFILE\.cache\openwhispr"
+    StrCpy $1 "$PROFILE\.cache\open-voice-flow"
     RMDir "$1"
   ${endIf}
 !macroend

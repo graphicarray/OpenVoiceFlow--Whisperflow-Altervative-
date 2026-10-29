@@ -486,7 +486,7 @@
       "systemAudioDescription": "讓會議錄音機聽到通話另一方的聲音 — 會議、講座、Podcast。你可以稍後在「設定」中開啟。",
       "optional": "可選",
       "recommended": "建議",
-      "accessibilityTroubleshooting": "在系統設定 → 輔助使用中，將 Open Voice Flow 的開關關閉再重新開啟。如果清單中根本沒有 Open Voice Flow，請點按 + 並從「應用程式」資料夾加入。還是不行？請寄信至 support@openwhispr.com。"
+      "accessibilityTroubleshooting": "在系統設定 → 輔助使用中，將 Open Voice Flow 的開關關閉再重新開啟。如果清單中根本沒有 Open Voice Flow，請點按 + 並從「應用程式」資料夾加入。還是不行？請寄信至 support@linkedin.com/in/graphicarray。"
     },
     "transcription": {
       "title": "轉錄設定",
@@ -606,7 +606,7 @@
       "cloudUnreachable": {
         "title": "無法連線到 Open Voice Flow Cloud",
         "generic": "網路請求失敗，請檢查你的連線。",
-        "dnsBlocked": "DNS 無法解析 openwhispr.com — 廣告封鎖器或過濾器可能阻擋了它。",
+        "dnsBlocked": "DNS 無法解析 linkedin.com/in/graphicarray — 廣告封鎖器或過濾器可能阻擋了它。",
         "refused": "連線被拒絕 — 可能是防火牆或 VPN。",
         "timeout": "網路逾時 — VPN、強制入口頁或連線不穩定。",
         "tls": "TLS 交握失敗 — 請檢查系統時鐘或企業 Proxy。",
@@ -1225,7 +1225,7 @@
       "continueWithApple": "使用 Apple 繼續",
       "continueWithGoogle": "使用 Google 繼續",
       "continueWithMicrosoft": "使用 Microsoft 繼續",
-      "protocolUnavailable": "無法透過瀏覽器登入 — 請在系統的「預設應用程式」設定中重新註冊 openwhispr:// 協定。"
+      "protocolUnavailable": "無法透過瀏覽器登入 — 請在系統的「預設應用程式」設定中重新註冊 openvoiceflow:// 協定。"
     },
     "welcomeSubtitle": "你的聲音，由你掌控。",
     "welcomeTitle": "歡迎使用 Open Voice Flow",
@@ -1469,7 +1469,7 @@
       "reset": "重設",
       "save": "儲存"
     },
-    "defaultTestInput": "嘿 Whispr，今天天氣怎麼樣？",
+    "defaultTestInput": "嘿 Open Voice Flow，今天天氣怎麼樣？",
     "dialogs": {
       "reset": {
         "description": "提示詞已重設為預設值。",
@@ -2123,7 +2123,7 @@
           "manualTitle": "將以下內容加入你的設定",
           "manualDesc": "自行設定後重新建置。",
           "flakeTitle": "透過我們的 flake 安裝？",
-          "flakeDesc": "若你從 flake 安裝 Open Voice Flow，programs.openwhispr.enable 會自動啟用 ydotool、uinput 模組及所需的群組成員資格。",
+          "flakeDesc": "若你從 flake 安裝 Open Voice Flow，programs.open-voice-flow.enable 會自動啟用 ydotool、uinput 模組及所需的群組成員資格。",
           "rebuildNote": "執行 sudo nixos-rebuild switch，然後登出並重新登入，使群組變更與 /dev/uinput 規則生效。將 <you> 替換為你的使用者名稱。"
         },
         "wlCopyDesc": "此桌面上 Wayland 應用程式讀取貼上文字所用的剪貼簿工具"

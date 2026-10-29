@@ -59,7 +59,7 @@ class OnnxWorkerClient {
       if (logPath) env.OPENWHISPR_ONNX_WORKER_LOG = logPath;
 
       const child = utilityProcess.fork(WORKER_SCRIPT, [], {
-        serviceName: "openwhispr-onnx",
+        serviceName: "open-voice-flow-onnx",
         stdio: "pipe",
         env,
         execArgv: ["--max-old-space-size=512"],

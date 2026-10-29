@@ -212,7 +212,7 @@ export function buildStreamingSessionOptions({
     language: language && language !== "auto" ? language : undefined,
     keyterms,
     model: settings.cloudTranscriptionModel,
-    mode: settings.cloudTranscriptionMode === "byok" ? "byok" : "openwhispr",
+    mode: "byok",
     environment: settings.cortiEnvironment,
     tenant: settings.cortiTenant,
   };

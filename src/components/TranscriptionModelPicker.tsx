@@ -308,7 +308,7 @@ const PROVIDER_CREDENTIALS: Record<
     fields: [{ key: "geminiApiKey", input: "secret" }],
   },
   corti: {
-    consoleUrl: "https://www.corti.ai/?utm_source=referral&utm_content=&utm_campaign=openwhispr",
+    consoleUrl: "https://www.corti.ai/?utm_source=referral&utm_content=&utm_campaign=open-voice-flow",
     fields: [
       { key: "cortiClientId", input: "text", labelKey: "transcription.corti.clientId" },
       { key: "cortiClientSecret", input: "secret", labelKey: "transcription.corti.clientSecret" },
@@ -330,7 +330,7 @@ const PROVIDER_CREDENTIALS: Record<
     ],
   },
   tinfoil: {
-    consoleUrl: "https://tinfoil.sh/inference?utm_source=referral&utm_campaign=openwhispr",
+    consoleUrl: "https://tinfoil.sh/inference?utm_source=referral&utm_campaign=open-voice-flow",
     fields: [{ key: "tinfoilApiKey", input: "secret" }],
   },
   deepgram: {

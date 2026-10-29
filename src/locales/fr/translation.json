@@ -486,7 +486,7 @@
       "systemAudioDescription": "Permet à l'enregistreur de réunion d'entendre vos interlocuteurs : réunions, cours, podcasts. Activable plus tard dans les Réglages.",
       "optional": "Facultatif",
       "recommended": "Recommandé",
-      "accessibilityTroubleshooting": "Dans Réglages Système → Accessibilité, désactivez le bouton d'Open Voice Flow puis réactivez-le. Si Open Voice Flow n'apparaît pas du tout dans la liste, cliquez sur + et ajoutez-le depuis le dossier Applications. Toujours bloqué ? Écrivez à support@openwhispr.com."
+      "accessibilityTroubleshooting": "Dans Réglages Système → Accessibilité, désactivez le bouton d'Open Voice Flow puis réactivez-le. Si Open Voice Flow n'apparaît pas du tout dans la liste, cliquez sur + et ajoutez-le depuis le dossier Applications. Toujours bloqué ? Écrivez à support@linkedin.com/in/graphicarray."
     },
     "transcription": {
       "title": "Configuration de la transcription",
@@ -606,7 +606,7 @@
       "cloudUnreachable": {
         "title": "Impossible d'atteindre Open Voice Flow Cloud",
         "generic": "La requête réseau a échoué. Vérifiez votre connexion.",
-        "dnsBlocked": "Le DNS ne résout pas openwhispr.com — un bloqueur de publicités ou un filtre le bloque peut-être.",
+        "dnsBlocked": "Le DNS ne résout pas linkedin.com/in/graphicarray — un bloqueur de publicités ou un filtre le bloque peut-être.",
         "refused": "La connexion a été refusée — probablement un pare-feu ou un VPN.",
         "timeout": "Délai réseau dépassé — VPN, portail captif ou connexion instable.",
         "tls": "Échec du handshake TLS — vérifiez l'horloge système ou un proxy d'entreprise.",
@@ -1225,7 +1225,7 @@
       "continueWithApple": "Continuer avec Apple",
       "continueWithGoogle": "Continuer avec Google",
       "continueWithMicrosoft": "Continuer avec Microsoft",
-      "protocolUnavailable": "Connexion par navigateur indisponible — réenregistrez le protocole openwhispr:// dans les paramètres Applications par défaut du système."
+      "protocolUnavailable": "Connexion par navigateur indisponible — réenregistrez le protocole openvoiceflow:// dans les paramètres Applications par défaut du système."
     },
     "welcomeSubtitle": "Le pouvoir de votre voix. À vos conditions.",
     "welcomeTitle": "Bienvenue sur Open Voice Flow",
@@ -1563,7 +1563,7 @@
       "reset": "Réinitialiser",
       "save": "Enregistrer"
     },
-    "defaultTestInput": "Hey Whispr, quel temps fait-il aujourd'hui ?",
+    "defaultTestInput": "Hey Open Voice Flow, quel temps fait-il aujourd'hui ?",
     "dialogs": {
       "reset": {
         "description": "Le prompt a été réinitialisé à la valeur par défaut.",
@@ -2417,7 +2417,7 @@
           "manualTitle": "Ajoutez ceci à votre configuration",
           "manualDesc": "Configurez-le vous-même, puis reconstruisez.",
           "flakeTitle": "Vous installez via notre flake ?",
-          "flakeDesc": "Si vous installez Open Voice Flow depuis le flake, programs.openwhispr.enable active ydotool, le module uinput et les appartenances aux groupes pour vous.",
+          "flakeDesc": "Si vous installez Open Voice Flow depuis le flake, programs.open-voice-flow.enable active ydotool, le module uinput et les appartenances aux groupes pour vous.",
           "rebuildNote": "Exécutez sudo nixos-rebuild switch, puis déconnectez-vous et reconnectez-vous pour que le changement de groupe et la règle /dev/uinput prennent effet. Remplacez <you> par votre nom d'utilisateur."
         },
         "wlCopyDesc": "Outil de presse-papiers dans lequel les applications Wayland lisent le texte collé sur ce bureau"

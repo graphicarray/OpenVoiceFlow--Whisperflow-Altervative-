@@ -486,7 +486,7 @@
       "systemAudioDescription": "会議レコーダーが通話の相手側の音声（会議、講義、ポッドキャストなど）を聴けるようにします。後から設定で有効にできます。",
       "optional": "任意",
       "recommended": "推奨",
-      "accessibilityTroubleshooting": "システム設定 → アクセシビリティで、Open Voice Flowのスイッチをオフにしてから再度オンにしてください。Open Voice Flowがリストに表示されていない場合は、+ をクリックしてアプリケーションフォルダから追加してください。それでも解決しませんか？support@openwhispr.com までメールでお問い合わせください。"
+      "accessibilityTroubleshooting": "システム設定 → アクセシビリティで、Open Voice Flowのスイッチをオフにしてから再度オンにしてください。Open Voice Flowがリストに表示されていない場合は、+ をクリックしてアプリケーションフォルダから追加してください。それでも解決しませんか？support@linkedin.com/in/graphicarray までメールでお問い合わせください。"
     },
     "transcription": {
       "title": "文字起こし設定",
@@ -1226,7 +1226,7 @@
       "continueWithApple": "Apple で続ける",
       "continueWithGoogle": "Google で続ける",
       "continueWithMicrosoft": "Microsoft で続ける",
-      "protocolUnavailable": "ブラウザでのサインインを利用できません — システムの「既定のアプリ」設定で openwhispr:// プロトコルを再登録してください。"
+      "protocolUnavailable": "ブラウザでのサインインを利用できません — システムの「既定のアプリ」設定で openvoiceflow:// プロトコルを再登録してください。"
     },
     "welcomeSubtitle": "あなたの声の力を、あなたのやり方で。",
     "welcomeTitle": "Open Voice Flow へようこそ"
@@ -1469,7 +1469,7 @@
       "reset": "リセット",
       "save": "保存"
     },
-    "defaultTestInput": "ねぇ Whispr、今日の天気はどう？",
+    "defaultTestInput": "ねぇ Open Voice Flow、今日の天気はどう？",
     "dialogs": {
       "reset": {
         "description": "プロンプトをデフォルト値にリセットしました。",
@@ -2123,7 +2123,7 @@
           "manualTitle": "設定に以下を追加してください",
           "manualDesc": "ご自身で設定してからリビルドしてください。",
           "flakeTitle": "flakeからインストールする場合",
-          "flakeDesc": "flakeからOpen Voice Flowをインストールする場合、programs.openwhispr.enableを有効にするとydotool、uinputモジュール、グループのメンバーシップが自動で設定されます。",
+          "flakeDesc": "flakeからOpen Voice Flowをインストールする場合、programs.open-voice-flow.enableを有効にするとydotool、uinputモジュール、グループのメンバーシップが自動で設定されます。",
           "rebuildNote": "sudo nixos-rebuild switchを実行し、グループの変更と/dev/uinputのルールを反映させるためにログアウト後に再ログインしてください。<you>はあなたのユーザー名に置き換えてください。"
         },
         "wlCopyDesc": "このデスクトップで Wayland アプリが貼り付けるテキストを読み取るクリップボードツール"

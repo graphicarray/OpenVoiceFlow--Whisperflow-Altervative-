@@ -353,7 +353,7 @@ function resolveAllowedAudioPath(filePath) {
 }
 
 function buildMultipartBody(fileBuffer, fileName, contentType, fields = {}) {
-  const boundary = `----OpenWhispr${Date.now()}`;
+  const boundary = `----OpenVoiceFlow${Date.now()}`;
   const parts = [];
 
   parts.push(
@@ -673,7 +673,7 @@ class IPCHandlers {
     this.meetingAecManager = managers.meetingAecManager;
     this.getSemanticSearch = managers.getSemanticSearch;
     this.oauthProtocolRegistered = managers.oauthProtocolRegistered === true;
-    this.oauthProtocol = managers.oauthProtocol || "openwhispr";
+    this.oauthProtocol = managers.oauthProtocol || "openvoiceflow";
     this.sessionId = crypto.randomUUID();
     // requestId -> AbortControllers for in-flight audio-upload work (cloud
     // upload, or local transcription + diarization sharing one id), so a
@@ -4341,7 +4341,7 @@ class IPCHandlers {
 
       // These caches are not owned by one account. Remove them only through
       // the explicit device-erasure path, never during normal account deletion.
-      const homeCacheRoot = path.join(os.homedir(), ".cache", "openwhispr");
+      const homeCacheRoot = path.join(os.homedir(), ".cache", "open-voice-flow");
       for (const cacheName of ["embedding-models", "qdrant-data", "qdrant-data-dev", "yt-dlp"]) {
         try {
           fs.rmSync(path.join(homeCacheRoot, cacheName), { recursive: true, force: true });
@@ -6724,7 +6724,7 @@ class IPCHandlers {
 
     ipcMain.handle("cloud-transcribe", async () => ({
       success: false,
-      error: "OpenWhispr Cloud AI has been removed. Please use a local or BYOK model.",
+      error: "Cloud AI is disabled. Please use a local or BYOK model.",
       code: "CLOUD_DISABLED",
     }));
     ipcMain.on("cloud-transcribe-cancel", () => {});
@@ -9961,7 +9961,7 @@ class IPCHandlers {
 
     ipcMain.handle("cloud-reason", async () => ({
       success: false,
-      error: "OpenWhispr Cloud AI has been removed. Please use a local or BYOK model.",
+      error: "Cloud AI is disabled. Please use a local or BYOK model.",
       code: "CLOUD_DISABLED",
     }));
     ipcMain.on("cloud-reason-cancel", () => {});
@@ -10233,7 +10233,7 @@ class IPCHandlers {
 
     ipcMain.handle("transcribe-audio-file-cloud", async () => ({
       success: false,
-      error: "OpenWhispr Cloud AI has been removed. Please use a local or BYOK model.",
+      error: "Cloud AI is disabled. Please use a local or BYOK model.",
       code: "CLOUD_DISABLED",
     }));
 
