@@ -1556,7 +1556,7 @@ export const useSettingsStore = create<SettingsState>()((set, get) => ({
   // Secrets aren't hydrated yet at construction; the BYOK default is set
   // post-hydration in initializeSettings.
   cloudTranscriptionMode: "byok",
-  cleanupCloudMode: readString("cleanupCloudMode", "openwhispr"),
+  cleanupCloudMode: "byok",
   cleanupCloudBaseUrl: readString("cleanupCloudBaseUrl", API_ENDPOINTS.OPENAI_BASE),
   cortiEnvironment: readString("cortiEnvironment", "us"),
   cortiTenant: readString("cortiTenant", "base"),

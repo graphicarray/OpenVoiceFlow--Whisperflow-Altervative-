@@ -64,7 +64,6 @@ export default function HistoryView({
   const dataRetentionEnabled = usePolicyStore((policyState) =>
     effectiveLocalHistoryEnabled(policyState, personalDataRetentionEnabled)
   );
-  const { events, isLoading: eventsLoading, isConnected } = useUpcomingEvents();
   const toneStylePrompt = useToneStylePrompt();
   const firstName = userName?.trim().split(/\s+/)[0];
   const hasHistory = history.length > 0;
@@ -246,16 +245,6 @@ export default function HistoryView({
           )}
         </div>
 
-        {/* With history, drop the day cards by one date row (pt-2 + text-sm line + pb-2.5) so
-            the first one lines up with the first transcription. */}
-        <div className={cn("hidden w-80 shrink-0 md:block", history.length > 0 && "pt-[2.375rem]")}>
-          <UpcomingMeetings
-            events={events}
-            isLoading={eventsLoading}
-            isConnected={isConnected}
-            onConnectCalendar={onOpenIntegrations}
-          />
-        </div>
       </div>
     </div>
   );
